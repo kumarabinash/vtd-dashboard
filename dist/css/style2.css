@@ -39,8 +39,9 @@ body{
 
 	.folders li{
 		list-style: none;
-		display: inline;
-		float: left;
+		/*display: inline;
+		float: left;*/
+		display: inline-block;
 
 	}
 
@@ -75,6 +76,7 @@ body{
 		}
 		.folders li .item-main{
 			position: absolute;
+			text-align: center;
 			z-index: 10;
 			//background: #2980b9;
 			//background: rgba(0, 0, 0, 0.8);
@@ -106,6 +108,7 @@ body{
 
 	.pagination button{
 		clear:both;
+
 	    width:150px;
 	    margin:10px auto;
 	    padding:7px 13px;
