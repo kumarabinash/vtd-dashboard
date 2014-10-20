@@ -1,0 +1,152 @@
+body{
+	background: #ddd;
+	font-family: Helvetica;
+	padding:0;
+	margin:0;
+	min-width: 100%;
+	min-height: 100%
+}
+
+.containerd{
+	min-height: 100%;
+	min-width: 100%;
+}
+
+
+.folders{  
+	position: absolute;
+	background: #efefef;
+	width: 100%;
+	padding: 10px 0 10px 0;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	box-shadow: 0 0 5px #777;
+}
+
+	
+	.folders-menu li{
+		padding-top: 10px;
+		vertical-align: center;
+		font-size: 1.5em;
+		list-style: none;
+		display: inline-block;
+	}
+	.folders h3{
+		margin: 0;
+	}
+
+	.folders li{
+		list-style: none;
+		display: inline;
+		float: left;
+
+	}
+
+	.folders ul {
+		//-webkit-perspective:1000;
+	}
+	.folders ul li div{
+		background: #fff;
+		-webkit-transition: all 0.5s;
+		-webkit-backface-visibility:hidden;
+		border-radius: 5px;
+		padding: 10px;
+		text-align:left;
+		width: 200px;
+		height: 200px;
+		margin-right: 10px;
+		box-shadow: 0 2px 5px #ccc;
+		margin-top: 12px;
+		cursor: pointer;
+	}
+
+		li:hover .item-main{
+			z-index: 0;
+			opacity: 0;
+			//-webkit-transform:rotateY(180deg);
+			//-moz-transform:rotateY(180deg);
+		}
+
+		li:hover .item-details{
+			z-index: 3;
+			opacity: .5;
+		}
+		.folders li .item-main{
+			position: absolute;
+			z-index: 10;
+			//background: #2980b9;
+			//background: rgba(0, 0, 0, 0.8);
+
+		}
+			.item-main img{
+				border: 3px solid white;
+				border-radius: 99px;
+				box-shadow: 0 2px 5px #bbb;
+			}
+
+		.folders li .item-details{
+			line-height: 150px;
+			overflow: hidden;
+			text-align: center;
+			/*line-height: 2em;*/
+			background: rgba(0, 0, 0, 0.5);
+			font-family: Helvetica;
+			opacity: 0
+			background: #000;
+			//-webkit-transform: rotateY(180deg);
+		}
+			.item-details .glyphicon{
+				font-size: 80px;
+				margin-top: 35px;
+				text-align: center;
+				color:white;
+			}
+
+	.pagination button{
+		clear:both;
+	    width:150px;
+	    margin:10px auto;
+	    padding:7px 13px;
+	    text-align:center;
+	    background: linear-gradient(to bottom, #42d17f 0%,#29b765 100%);
+	    font-size:20px;
+	    font-family: 'Arial', sans-serif;
+	    color:#ffffff;
+	    white-space: nowrap;
+	    border:none;
+
+	}
+
+	.pagination button:hover{
+		vertical-align: top;
+	    padding: 8px 13px 6px;
+	}
+
+.files{
+	position: absolute;
+	background: #ccc;
+	width: 100%;
+	padding: 10px 0 10px 0;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	box-shadow: 0 0 5px #777;
+	//display: none;
+	z-index: -1;
+}
+	.files .glyphicon-remove{
+		font-size: 30px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+
+	.files li{
+		list-style: none;
+		margin-right: 10px;
+		display: inline-block;
+	}
+
