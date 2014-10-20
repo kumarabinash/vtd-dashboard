@@ -144,6 +144,8 @@ body{
 	z-index: -5;
 }
 	.files .glyphicon-remove{
+		color:rgba(255, 255, 255, 0.8);
+		cursor: pointer;
 		font-size: 30px;
 		position: absolute;
 		top: 20px;
@@ -156,7 +158,8 @@ body{
 		display: inline-block;
 	}
 
-	.files li div{
+	.files li .file{
+		cursor: pointer;
 		background: white;
 		padding: 10px;
 		width: 200px;
