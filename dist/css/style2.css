@@ -12,7 +12,7 @@ body{
 	min-width: 100%;
 }
 
-
+/*Styling for folder*/
 .folders{  
 	position: absolute;
 	background: #efefef;
@@ -33,7 +33,7 @@ body{
 		list-style: none;
 		display: inline-block;
 	}
-	.folders h3{
+	.folders h3, .files h3{
 		margin: 0;
 	}
 
@@ -48,13 +48,14 @@ body{
 	.folders ul {
 		//-webkit-perspective:1000;
 	}
-	.folders ul li div{
+	.folders ul li .item-main, .folders ul li .item-details{
 		background: #fff;
 		-webkit-transition: all 0.5s;
 		-webkit-backface-visibility:hidden;
 		border-radius: 5px;
 		padding: 10px;
-		text-align:left;
+		color: #2b2b2b;
+		text-align:center;
 		width: 200px;
 		height: 200px;
 		margin-right: 10px;
@@ -95,15 +96,15 @@ body{
 			/*line-height: 2em;*/
 			background: rgba(0, 0, 0, 0.5);
 			font-family: Helvetica;
-			opacity: 0
+			opacity: 0.9;
 			background: #000;
-			//-webkit-transform: rotateY(180deg);
+			/*-webkit-transform: rotateY(180deg);*/
 		}
 			.item-details .glyphicon{
 				font-size: 80px;
 				margin-top: 35px;
 				text-align: center;
-				color:white;
+				color:#333;
 			}
 
 	.pagination button{
@@ -127,9 +128,11 @@ body{
 	    padding: 8px 13px 6px;
 	}
 
+
+/*Styleing for files*/
 .files{
 	position: absolute;
-	background: #ccc;
+	background: rgba(0, 0, 0, 0.9);
 	width: 100%;
 	padding: 10px 0 10px 0;
 	height: 100%;
@@ -138,7 +141,7 @@ body{
 	text-align: center;
 	box-shadow: 0 0 5px #777;
 	//display: none;
-	z-index: -1;
+	z-index: -5;
 }
 	.files .glyphicon-remove{
 		font-size: 30px;
@@ -151,5 +154,13 @@ body{
 		list-style: none;
 		margin-right: 10px;
 		display: inline-block;
+	}
+
+	.files li div{
+		background: white;
+		padding: 10px;
+		width: 200px;
+		height: 200px;
+		border-radius: 5px;
 	}
 
